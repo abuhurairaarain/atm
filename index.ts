@@ -47,19 +47,16 @@ if (pinEntered.pin === myPin) {
                 name: "fastCash",
                 type: "list",
                 message: "Select the amount",
-                choices: ["1000", "3000", "5000", "10000"]
-            }
+                choices: ["1000", "3000", "5000", "10000"],
+            },
         ]);
         if (myBalance >= fastCashAmount.fastCash) {
-            myBalance -= fastCashAmount.fastCash
+            myBalance -= fastCashAmount.fastCash;
             console.log(`Your balance is :${myBalance}`);
-
         } else {
             console.log("Insufficient balance");
-
         }
     }
 } else {
     console.log("Incorrect pin code");
-
 }
